@@ -1,0 +1,44 @@
+@CHARSET "ISO-8859-1";
+@import "normalize.css";
+@import "responsive.css";
+
+html, body { height: 100%; margin: 0; ackground-color: purple;}
+
+.navbar { border: 1px dashed #000; background-color: whitesmoke;}
+.navbar .m-auto li { margin-left: 12px; }
+
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .nav-link:focus { 
+  color: #000; background-color: green; border-radius: 0.25rem;
+}
+
+.rgb_odd, .rgb_even{ padding: 20%;}
+
+.rgb_odd{ border-radius: 20px 0;} 
+.border .rgb_even{ border-radius: 0 20px;} 
+
+/*.border { border: 1px solid #dee2e6 !important; border-radius: 20px 0; }*/
+.form-group .fixed{ padding: 5px; }
+
+
+
+.container-fluid fieldset {
+   border: 1px dashed skyblue !important;
+   border-radius: 0.50rem;
+   padding: 0 1em 1em 1em !important;
+   margin: 0 0 1.5em 0 !important;
+   -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 2px 0px #000;
+}
+
+.container-fluid legend { 
+    width:inherit;
+    font-size: 1em !important;
+    font-weight: bold !important;
+    text-align: center;
+    border: 1px solid pink; 
+    background-color: whitesmoke;
+    border-radius: 12px;   
+    padding: 0px 10px; 
+    margin-bottom:10px;
+}
