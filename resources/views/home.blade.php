@@ -23,8 +23,7 @@
                            <label class="col-3 col-form-label">Blue</label>                        
                         </div>         
                         <div class="form-group row justify-content-center">
-
-                           <label class="col-2 col-form-label">Input</label>
+                           <label class="col-2 col-form-label text-center">Input</label>
                            <div class="col">
                               <input type="text" class="form-control" name="red" value="{{ old('red') }}" required placeholder="Max:255">
                            </div>
@@ -36,13 +35,16 @@
                            </div>                          
                            <button type="submit" class="col-2 btn btn-primary">Search</button>
                         </div>
+                        <div class="row justify-content-center">
+                           <small class="text-center text-danger">Red*Green*Blue = Multiple number create</small>
+                        </div>
                      </div>
                   </form>
                   <form method="POST" action="{{ url('fixed_RGB') }}" enctype="multipart/form-data">
                      @csrf
                      <div class="form-group">
                         <div class="form-group row justify-content-center">
-                           <label class="col-2 col-form-label fixed">Fixed color</label>
+                           <label class="col-2 col-form-label fixed text-center">Fixed color</label>
                            <div class="col">
                               <input type="text" class="form-control" name="red" value="{{ old('red') }}" required placeholder="Number">
                            </div>
